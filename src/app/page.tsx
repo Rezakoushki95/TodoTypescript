@@ -82,13 +82,14 @@ const Page: React.FC = () => {
       sortOrder: index,
     }));
 
+    setTodos(updatedTodos);
     FirebaseService.updateTodosOrder(updatedTodos)
-      .then(() => {
-        setTodos(updatedTodos);
-      })
-      .catch((error: any) => {
-        console.error('Error updating todos:', error);
-      });
+    //     .then(() => {
+    //       setTodos(updatedTodos);
+    //     })
+    //     .catch((error: any) => {
+    //       console.error('Error updating todos:', error);
+    //     });
   };
 
   if (loading) {
