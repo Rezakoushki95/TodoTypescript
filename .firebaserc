@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "prod": "todolist-97501",
+    "default": "todolist-97501"
+  },
+  "targets": {},
+  "etags": {}
+}
